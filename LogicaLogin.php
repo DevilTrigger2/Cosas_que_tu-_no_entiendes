@@ -21,7 +21,7 @@ session_start();
                         echo "<script> location.href='Admin/PaginaAdmin.php'</script>";
                     }else{
                         if ($autenticacion['status'] == 'Docente') {
-                            echo "<script> location.href='Admin/PaginaAdmin.php' </script>";
+                            echo "<script> location.href='Docente/PaginaDocente.php' </script>";
                         }else{
                             if ($autenticacion['status'] == 'Usuario') {
                                 echo "<script> location.href='Admin/PaginaAdmin.php' </script>";                    

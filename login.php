@@ -9,13 +9,10 @@
      <title>login</title>
   </head>
   <body>
-  <?php if(!empty($message)): ?>
-    <p> <?= $message ?>
-  <?php endif; ?>
+
 
   <h1>login<h1>}
-  <a href="login.php">Login</a>
-         <a href="signup.php">Signup</a>
+ 
 
 <form action="login.php" method="POST">
     <input name="email" type="text" placeholder="ingresar correo">

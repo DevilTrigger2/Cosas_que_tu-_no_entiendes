@@ -4,6 +4,9 @@
       header("location:../index.php");
    }    
    $Nombre_Usuario = $_SESSION['Nombre_User'];
+   $Status_Usuario = $_SESSION['Status_User'];
+
+if ($Status_Usuario == 'Admin') {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +17,13 @@
 </head>
 <body>
    <h1>Bienvenido admin:<?php echo $Nombre_Usuario ?></h1>
-
-   <a href="../logout.php"><h2>Salir</h2></a>
+   <div><?php include("Registro/signup.php"); ?></div>
+   <a href="../logout.php"><h2>Cerrar Sesion</h2></a>
 </body>
 </html>
+<?php 
+}
+else{
+   header("location:../Docente/PaginaDocente.php");
+}
+?>
