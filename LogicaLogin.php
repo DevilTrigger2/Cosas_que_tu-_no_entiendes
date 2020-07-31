@@ -24,7 +24,7 @@ session_start();
                             echo "<script> location.href='Docente/PaginaDocente.php' </script>";
                         }else{
                             if ($autenticacion['status'] == 'Usuario') {
-                                echo "<script> location.href='Admin/PaginaAdmin.php' </script>";                    
+                                echo "<script> location.href='Usuario/PaginaUsuario.php' </script>";                    
                             }else{
                                 echo '<script>alert("Password Incorrecto")</script>';
                                 echo "<script> location.href='index.php'</script>";  
